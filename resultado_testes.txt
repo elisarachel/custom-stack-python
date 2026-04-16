@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.1.1, pluggy-1.5.0 -- /home/elisa-rachel/Documents/fatec/6DSM/teste/2026-04-16/custom-stack/custom-stack/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/elisa-rachel/Documents/fatec/6DSM/teste/2026-04-16/custom-stack/custom-stack
+plugins: cov-5.0.0, mock-3.14.0
+collecting ... collected 12 items
+
+test/custom_stack_test.py::test_push_one_element_in_stack PASSED         [  8%]
+test/custom_stack_test.py::test_is_empty_when_new_stack PASSED           [ 16%]
+test/custom_stack_test.py::test_size_is_zero_when_new_stack PASSED       [ 25%]
+test/custom_stack_test.py::test_push_increases_size PASSED               [ 33%]
+test/custom_stack_test.py::test_push_raises_stack_full_exception_when_at_limit PASSED [ 41%]
+test/custom_stack_test.py::test_pop_returns_last_pushed_element PASSED   [ 50%]
+test/custom_stack_test.py::test_pop_decreases_size PASSED                [ 58%]
+test/custom_stack_test.py::test_pop_raises_stack_empty_exception_when_empty PASSED [ 66%]
+test/custom_stack_test.py::test_top_raises_stack_empty_exception_when_empty PASSED [ 75%]
+test/custom_stack_test.py::test_top_does_not_remove_element PASSED       [ 83%]
+test/number_asc_order_test.py::test_sort_returns_numbers_in_ascending_order PASSED [ 91%]
+test/number_asc_order_test.py::test_sort_empty_stack_returns_empty_list PASSED [100%]
+
+---------- coverage: platform linux, python 3.12.3-final-0 -----------
+Name                        Stmts   Miss  Cover   Missing
+---------------------------------------------------------
+src/__init__.py                 0      0   100%
+src/custom_stack_class.py      24      0   100%
+src/number_asc_order.py         9      0   100%
+---------------------------------------------------------
+TOTAL                          33      0   100%
+
+
+============================== 12 passed in 0.04s ==============================
